@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VibeCast</title>
+  <link rel="icon" href="logo5.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="imgy.css">
+
+</head>
+
+<body>
+
+
+  <div class="bond" id="singersRow">
+    <div class="brand">
+      <img src="logo6.png" alt="logo">
+      VIBECAST
+    </div>
+    <img src="arijit.jpg" alt="Arijit Singh" data-singer="Arijit Singh">
+    <img src="diljit.png" alt="Diljit Dosanjh" data-singer="Diljit Dosanjh">
+    <img src="sapna.png" alt="Sapna Choudhary" data-singer="Sapna Choudhary">
+    <img src="sonu.png" alt="Sonu Nigam" data-singer="Sonu Nigam">
+    <img src="kk.png" alt="KK" data-singer="KK">
+    <img src="jubin.png" alt="Jubin Nautiyal" data-singer="Jubin Nautiyal">
+    <img src="pawan.png" alt="Pawan Singh" data-singer="Pawan Singh">
+    <img src="new.gif" alt="1">
+
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <input type="text" id="searchInput" placeholder="Search songs or singers...">
+    <i class="fas fa-search" id="searchBtn"></i>
+  </div>
+
+
+  <div class="caption">🎶 Music is the way to express our emotions 🎶</div>
+
+  <div class="container">
+    <div class="playlistTitle1">
+      <h1 id="playlistTitle">Select a Singer</h1>
+    </div>
+    <ul class="list" id="playlist"></ul>
+  </div>
+
+
+  <div class="bottom">
+    <div class="controls">
+      <i class="fas fa-backward" onclick="prevSong()"></i>
+      <i class="fas fa-play" id="playPauseBtn" onclick="togglePlay()"></i>
+      <i class="fas fa-forward" onclick="nextSong()"></i>
+    </div>
+    <input type="range" id="progress" value="0">
+    <div class="songinfo" id="songInfo">No song playing</div>
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="playli.js"></script>
+
+
+
+</body>
+
+</html>

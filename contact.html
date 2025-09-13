@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VibeCast</title>
+<link rel="icon" href="logo5.png" type="image/png">
+<link rel="stylesheet" href="cont.css">
+</head>
+<body>
+
+<div class="contact-container">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required min="1" max="120">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="singers">Choose your favorite singers:</label>
+        <div class="singers-container" id="singersContainer"></div>
+        <select id="singersSelect" class="singers-select">
+            <option value="Arijit Singh">Arijit Singh</option>
+            <option value="Shreya Ghoshal">Shreya Ghoshal</option>
+            <option value="Neha Kakkar">Neha Kakkar</option>
+            <option value="Sonu Nigam">Sonu Nigam</option>
+            <option value="Atif Aslam">Atif Aslam</option>
+            <option value="Lata Mangeshkar">Lata Mangeshkar</option>
+            <option value="Kishore Kumar">Kishore Kumar</option>
+            <option value="KK">KK</option>
+            <option value="Sunidhi Chauhan">Sunidhi Chauhan</option>
+            <option value="Mohit Chauhan">Mohit Chauhan</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="coc.js"></script>
+</body>
+</html>
